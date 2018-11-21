@@ -1,0 +1,1 @@
+python sk_backup.py的絕對位置 &
