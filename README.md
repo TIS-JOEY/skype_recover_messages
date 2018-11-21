@@ -3,3 +3,11 @@
 
 ## Installation
 
+Step1
+
+安裝skpy，詳情請見 https://github.com/Terrance/SkPy
+
+```
+pip install skpy
+```
+
