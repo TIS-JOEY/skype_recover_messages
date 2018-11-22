@@ -1,8 +1,4 @@
-username = 'SK帳號'
-password = 'SK密碼'
-
-src = '/Users/apple/Library/Application Support/Skype/你的SK ID/main.db'
-dst = '備份目錄位置'
+from config import *
 
 from skpy import SkypeEventLoop, SkypeNewMessageEvent
 from shutil import copy2

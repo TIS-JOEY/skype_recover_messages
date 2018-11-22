@@ -1,12 +1,11 @@
-dst = '/Users/apple/Desktop/Backup/'
-
+import config
 import os
 from subprocess import call
 import os
 
 
-command = 'pythonw /anaconda3/envs/py2/lib/python2.7/site-packages/skyperious/main.py merge "/Users/apple/Library/Application Support/Skype/live#3ad22769750/main.db" '
 
+command = 'pythonw '+ skyperious_main_path + ' merge "'+src+'" '
 for file_name in os.listdir(dst):
 	if file_name=='main.db':
 		os.rename(dst+'main.db',dst+'main_old.db')
@@ -17,7 +16,7 @@ for file_name in os.listdir(dst):
 command+='-o "'+dst+"main.db"+'"'
 
 
-os.system("source activate py2 && "+command)
+os.system("source activate "+ env_name +" && +command")
 
 
 for file_name in os.listdir(dst):
