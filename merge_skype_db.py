@@ -1,4 +1,4 @@
-import config
+from config import *
 import os
 from subprocess import call
 import os
@@ -16,7 +16,7 @@ for file_name in os.listdir(dst):
 command+='-o "'+dst+"main.db"+'"'
 
 
-os.system("source activate "+ env_name +" && +command")
+os.system("source activate "+ env_name +" && "+command)
 
 
 for file_name in os.listdir(dst):
