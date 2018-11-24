@@ -85,5 +85,5 @@ sudo crontab -e
 
 進入編輯器後，輸入以下指令。(此指令代表著每天的11點會執行。)
 ```
-0 11 * * * merge_skype_db.py的絕對位置
+0 11 * * * cd cd至sk_backup的絕對位置 && /usr/bin/python merge_skype_db.py
 ```
